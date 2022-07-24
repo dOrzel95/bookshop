@@ -10,8 +10,8 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class UsersService {
-    private final UsersInMemoryRepository usersInMemoryRepository;
+    private final UsersRepository usersRepository;
     List<User> getAllUsers(){
-        return usersInMemoryRepository.getAllUsers();
+        return usersRepository.getAllUsers();
     }
 }

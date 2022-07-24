@@ -2,12 +2,12 @@ package pl.damian.bookshop.users;
 
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@NoArgsConstructor
-@Component
+@Repository
 public class UsersInMemoryRepository implements UsersRepository {
 
     @Override
