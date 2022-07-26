@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class UsersService {
     private final UsersRepository usersRepository;
-    List<User> getAllUsers(){
-        return usersRepository.getAllUsers();
+    User getAllUsers(){
+        return usersRepository.getUser();
     }
 }
