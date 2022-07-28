@@ -1,8 +1,6 @@
 package pl.damian.bookshop.users;
 
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,7 +9,12 @@ import java.util.List;
 @AllArgsConstructor
 public class UsersService {
     private final UsersRepository usersRepository;
-    User getAllUsers(){
-        return usersRepository.getUser();
+
+    public User getUserById(int id) {
+        return usersRepository.getUserById(id);
+    }
+    public List<User> getAll(){
+
+        return  usersRepository.getAll();
     }
 }
